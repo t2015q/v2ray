@@ -1,5 +1,5 @@
 _get_latest_version() {
-	v2ray_repos_url="https://api.github.com/repos/v2fly/v2ray-core/releases/42541335?v=$RANDOM"
+	v2ray_repos_url="https://api.github.com/repos/v2fly/v2ray-core/releases/41584375?v=$RANDOM"
 	v2ray_latest_ver="$(curl -s $v2ray_repos_url | grep 'tag_name' | cut -d\" -f4)"
 
 	if [[ ! $v2ray_latest_ver ]]; then
